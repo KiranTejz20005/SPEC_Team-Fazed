@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Fillora.in - Form Filling">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fillora">
+    <title>Fillora.in - Form Filling</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="theme-light">
+    <div class="screen active" id="conversational-form">
+        <div class="container">
+            <!-- Top Bar -->
+            <div class="form-top-bar">
+                <button class="back-button icon-container" onclick="window.location.href='document-upload.html'"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+                <div class="form-title-group">
+                    <h2>Scholarship Application</h2>
+                    <p class="form-page-info">Page 2 of 5</p>
+                </div>
+                <div class="top-bar-actions">
+                    <div class="ai-confidence-badge">
+                        <span class="icon-container"><svg class="icon" style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></span>
+                        <span>95%</span>
+                    </div>
+                    <button class="icon-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg></button>
+                    <button class="icon-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></button>
+                </div>
+            </div>
+
+            <!-- Progress Indicator -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>25% Complete</span>
+                    <span>3 of 12 fields filled</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%"></div>
+                </div>
+            </div>
+
+            <!-- Form Fields Section -->
+            <div class="form-fields-section">
+                <div class="field-group">
+                    <label class="field-label">
+                        Father's Name <span class="required">*</span>
+                        <span class="ai-filled-badge">AI-filled</span>
+                    </label>
+                    <input type="text" class="form-input ai-filled" value="Rajesh Kumar Sharma">
+                    <div class="field-verification">
+                        <span class="verify-icon">✓</span>
+                        <span>Verified from Aadhar Card</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label">
+                        Mother's Name <span class="required">*</span>
+                    </label>
+                    <input type="text" class="form-input" placeholder="Enter mother's name">
+                    <div class="field-confidence">
+                        <span class="confidence-indicator low">Confidence: 45%</span>
+                        <span class="field-hint">Found in document but needs verification</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label">
+                        Date of Birth <span class="required">*</span>
+                        <span class="ai-filled-badge">AI-filled</span>
+                    </label>
+                    <input type="date" class="form-input ai-filled" value="1990-03-15">
+                    <div class="field-verification">
+                        <span class="verify-icon">✓</span>
+                        <span>Verified from Aadhar Card</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label">
+                        Gross Annual Income <span class="required">*</span>
+                    </label>
+                    <input type="number" class="form-input" placeholder="Enter annual income">
+                    <div class="field-hint">
+                        <span>💡</span>
+                        <span>This includes salary, rental income, and earnings from all sources</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label">
+                        Academic Qualifications <span class="required">*</span>
+                    </label>
+                    <textarea class="form-textarea" placeholder="Enter your qualifications"></textarea>
+                    <div class="field-suggestion">
+                        <span>💡</span>
+                        <span>I found details from your mark sheets. Would you like me to auto-fill?</span>
+                        <button class="suggestion-button">Yes, fill it</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <div class="ai-status">
+                        <span class="status-dot online"></span>
+                        <span>Fillora AI Assistant</span>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-avatar icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></div>
+                        <div class="message-content">
+                            <div class="message-bubble">
+                                It looks like you need to enter your Father's Name here. I found 'Rajesh Kumar Sharma' in your uploaded Aadhar card. Shall I fill it for you?
+                            </div>
+                            <div class="message-actions">
+                                <button class="quick-action">Yes, fill it</button>
+                                <button class="quick-action">No, I'll type</button>
+                                <button class="quick-action">Explain more</button>
+                            </div>
+                            <div class="message-time">2:30 PM</div>
+                        </div>
+                    </div>
+
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <div class="message-bubble">
+                                Yes, please fill it
+                            </div>
+                            <div class="message-time">2:31 PM</div>
+                        </div>
+                    </div>
+
+                    <div class="message ai-message">
+                        <div class="message-avatar icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></div>
+                        <div class="message-content">
+                            <div class="message-bubble">
+                                Great! I've filled it for you. The next section asks for your academic details. Please have your mark sheets ready. I can help extract information from them too!
+                            </div>
+                            <div class="message-time">2:31 PM</div>
+                        </div>
+                    </div>
+
+                    <div class="message ai-message typing">
+                        <div class="message-avatar icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></div>
+                        <div class="message-content">
+                            <div class="message-bubble">
+                                <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="chat-input-actions">
+                        <button class="chat-action-btn icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></button>
+                        <button class="chat-action-btn icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></button>
+                    </div>
+                    <input type="text" class="chat-input" placeholder="Type your message or ask a question...">
+                    <button class="voice-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></button>
+                    <button class="send-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

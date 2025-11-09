@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Fillora.in - Form History">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fillora">
+    <title>Fillora.in - History</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="theme-light">
+    <div class="screen active" id="history">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <button class="back-button icon-container" onclick="navigateTo('dashboard')"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+                <h1>Form History</h1>
+            </div>
+
+            <!-- Stats Summary -->
+            <div class="history-stats">
+                <div class="history-stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                    <div class="stat-details">
+                        <div class="stat-number">24</div>
+                        <div class="stat-text">Total Forms</div>
+                    </div>
+                </div>
+                <div class="history-stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="stat-details">
+                        <div class="stat-number">18</div>
+                        <div class="stat-text">Submitted</div>
+                    </div>
+                </div>
+                <div class="history-stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v6h.01M6 18h12v-6M18 22H6v-4m12-4v-6H6"/></svg></div>
+                    <div class="stat-details">
+                        <div class="stat-number">6</div>
+                        <div class="stat-text">In Progress</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="history-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Submitted</button>
+                <button class="filter-btn">In Progress</button>
+                <button class="filter-btn">Drafts</button>
+                <button class="filter-btn icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></button>
+            </div>
+
+            <!-- Search -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search forms...">
+                <button class="search-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="history-timeline">
+                <div class="timeline-date">Today</div>
+
+                <div class="history-item">
+                    <div class="history-icon status-submitted icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Scholarship Application</h4>
+                            <span class="history-status status-submitted">Submitted</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Submitted 2 hours ago</span>
+                            <span>•</span>
+                            <span>18 fields completed</span>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-icon status-in-progress icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v6h.01M6 18h12v-6M18 22H6v-4m12-4v-6H6"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Passport Renewal</h4>
+                            <span class="history-status status-in-progress">70% Complete</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Last updated 1 day ago</span>
+                            <span>•</span>
+                            <span>12 of 17 fields filled</span>
+                        </div>
+                        <div class="progress-bar small">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn primary icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Continue</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-date">Yesterday</div>
+
+                <div class="history-item">
+                    <div class="history-icon status-submitted icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>University Admission Form</h4>
+                            <span class="history-status status-submitted">Submitted</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Submitted yesterday</span>
+                            <span>•</span>
+                            <span>25 fields completed</span>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-date">Last Week</div>
+
+                <div class="history-item">
+                    <div class="history-icon status-submitted icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Job Application - Tech Corp</h4>
+                            <span class="history-status status-submitted">Submitted</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Submitted 3 days ago</span>
+                            <span>•</span>
+                            <span>22 fields completed</span>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-icon status-submitted icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Health Insurance Claim</h4>
+                            <span class="history-status status-submitted">Submitted</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Submitted 5 days ago</span>
+                            <span>•</span>
+                            <span>15 fields completed</span>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-icon status-draft icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Bank Account Opening</h4>
+                            <span class="history-status status-draft">Draft</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Last saved 6 days ago</span>
+                            <span>•</span>
+                            <span>8 of 20 fields filled</span>
+                        </div>
+                        <div class="progress-bar small">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn primary icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Continue</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-date">Last Month</div>
+
+                <div class="history-item">
+                    <div class="history-icon status-submitted icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="history-content">
+                        <div class="history-header">
+                            <h4>Property Registration</h4>
+                            <span class="history-status status-submitted">Submitted</span>
+                        </div>
+                        <div class="history-meta">
+                            <span>Submitted 2 weeks ago</span>
+                            <span>•</span>
+                            <span>30 fields completed</span>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View</button>
+                            <button class="action-btn icon-container"><svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <button class="load-more-btn">Load More</button>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="templates.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                    <span class="nav-label">Templates</span>
+                </a>
+                <a href="history.html" class="nav-item active">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg></span>
+                    <span class="nav-label">History</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                    <span class="nav-label">Settings</span>
+                </a>
+                <button class="fab icon-container" onclick="window.location.href='form-selection.html'">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

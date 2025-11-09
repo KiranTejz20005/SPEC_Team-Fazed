@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Fillora.in - Your AI-powered form assistant for effortless form filling">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fillora">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Fillora.in - Onboarding</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="theme-light">
+    <!-- Screen 1: Onboarding & Introduction -->
+    <div class="screen active" id="onboarding">
+        <div class="container">
+            <!-- Header -->
+            <div class="onboarding-header">
+                <div class="ai-character">
+                    <div class="character-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></div>
+                    <div class="pulse-animation"></div>
+                </div>
+                <h1 class="main-title">Welcome to Fillora.in</h1>
+                <p class="subtitle">Your Compassionate Partner for Effortless Forms</p>
+            </div>
+
+            <!-- Statistics Showcase -->
+            <div class="stats-showcase">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Forms Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+            </div>
+
+            <!-- Feature Carousel -->
+            <div class="feature-carousel">
+                <div class="carousel-item active">
+                    <div class="feature-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <h3>Smart Auto-Fill</h3>
+                    <p>Automatically extract and fill form data from your documents</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="feature-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                    <h3>AI Guidance</h3>
+                    <p>Get step-by-step help understanding complex questions</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="feature-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                    <h3>Multi-Language</h3>
+                    <p>Complete forms in your preferred language</p>
+                </div>
+            </div>
+
+            <!-- Progress Dots -->
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <label>Select Your Language</label>
+                <select class="language-dropdown">
+                    <option>English</option>
+                    <option>Hindi (हिंदी)</option>
+                    <option>Tamil (தமிழ்)</option>
+                    <option>Bengali (বাংলা)</option>
+                    <option>Telugu (తెలుగు)</option>
+                    <option>Marathi (मराठी)</option>
+                </select>
+            </div>
+
+            <!-- Trust Indicator -->
+            <div class="trust-indicator">
+                <span class="icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+                <span>Your data is encrypted and secure</span>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-button primary" onclick="window.location.href='signin.html'">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+    <!-- Screen 2: Dashboard -->
+    <div class="screen" id="dashboard">
+        <div class="container">
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div class="header-content">
+                    <h1>My Forms</h1>
+                    <p>What form are we tackling today?</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></button>
+                    <button class="icon-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div class="stat-info">
+                        <div class="stat-value">12</div>
+                        <div class="stat-text">Completed</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                    <div class="stat-info">
+                        <div class="stat-value">3</div>
+                        <div class="stat-text">In Progress</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <div class="stat-info">
+                        <div class="stat-value">5h</div>
+                        <div class="stat-text">Time Saved</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-grid">
+                    <button class="action-card" onclick="navigateTo('form-selection')">
+                        <div class="action-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
+                        <div class="action-text">Scholarship</div>
+                    </button>
+                    <button class="action-card">
+                        <div class="action-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg></div>
+                        <div class="action-text">Passport</div>
+                    </button>
+                    <button class="action-card">
+                        <div class="action-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                        <div class="action-text">Admission</div>
+                    </button>
+                    <button class="action-card">
+                        <div class="action-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                        <div class="action-text">Job Application</div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI Tip Card -->
+            <div class="ai-tip-card">
+                <div class="tip-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21h6"/><path d="M12 3a6 6 0 0 0-6 6c0 2.5 1.5 4.5 3 6"/><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 6"/><line x1="12" y1="15" x2="12" y2="21"/></svg></div>
+                <div class="tip-content">
+                    <strong>AI Tip:</strong> Upload your documents first for faster form filling!
+                </div>
+            </div>
+
+            <!-- Recent Forms -->
+            <div class="recent-forms">
+                <div class="section-header">
+                    <h3>Recent Forms</h3>
+                    <button class="text-button">View All</button>
+                </div>
+
+                <div class="form-card" onclick="navigateTo('conversational-form')">
+                    <div class="form-card-header">
+                        <div class="form-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                        <div class="form-info">
+                            <h4>Scholarship Application</h4>
+                            <p class="form-date">Last updated 2 hours ago</p>
+                        </div>
+                        <div class="form-status status-in-progress">70%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <div class="form-card-header">
+                        <div class="form-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg></div>
+                        <div class="form-info">
+                            <h4>Passport Renewal</h4>
+                            <p class="form-date">Last updated 1 day ago</p>
+                        </div>
+                        <div class="form-status status-awaiting">Awaiting Review</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <div class="form-card-header">
+                        <div class="form-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                        <div class="form-info">
+                            <h4>University Admission</h4>
+                            <p class="form-date">Submitted 3 days ago</p>
+                        </div>
+                        <div class="form-status status-completed"><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Submitted</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill completed" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for a form or document...">
+                <button class="search-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <a href="#" class="nav-item active" onclick="navigateTo('dashboard'); return false;">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="#" class="nav-item" onclick="navigateTo('templates'); return false;">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                    <span class="nav-label">Templates</span>
+                </a>
+                <a href="#" class="nav-item" onclick="navigateTo('history'); return false;">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg></span>
+                    <span class="nav-label">History</span>
+                </a>
+                <a href="#" class="nav-item" onclick="navigateTo('settings'); return false;">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                    <span class="nav-label">Settings</span>
+                </a>
+                <button class="fab icon-container" onclick="navigateTo('form-selection')">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

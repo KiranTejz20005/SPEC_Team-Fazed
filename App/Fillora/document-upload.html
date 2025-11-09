@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Fillora.in - Document Upload">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fillora">
+    <title>Fillora.in - Document Upload</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="theme-light">
+    <div class="screen active" id="document-upload">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <button class="back-button icon-container" onclick="window.location.href='form-selection.html'"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+                <h1>Provide Supporting Documents</h1>
+            </div>
+
+            <div class="header-text">
+                <h2>Let's gather your information</h2>
+                <p>Upload documents you want Fillora.in to extract data from. We prioritize your privacy.</p>
+            </div>
+
+            <!-- Document Stats -->
+            <div class="document-stats">
+                <div class="stat-card-small">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="stat-info">
+                        <div class="stat-value">3</div>
+                        <div class="stat-text">Documents</div>
+                    </div>
+                </div>
+                <div class="stat-card-small">
+                    <div class="stat-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></div>
+                    <div class="stat-info">
+                        <div class="stat-value">85%</div>
+                        <div class="stat-text">AI Ready</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drag & Drop Area -->
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon-large icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+                    <h3>Drag & Drop Files Here</h3>
+                    <p>or click to browse</p>
+                    <div class="upload-hint">
+                        <span>PDF, JPG, PNG, DOCX</span>
+                        <span>•</span>
+                        <span>Max 10MB per file</span>
+                    </div>
+                </div>
+                <input type="file" id="fileInput" multiple accept=".pdf,.jpg,.jpeg,.png,.docx" style="display: none;">
+            </div>
+
+            <!-- Scan via Camera -->
+            <button class="camera-button">
+                <span class="camera-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span>
+                <span>Scan via Camera</span>
+            </button>
+
+            <!-- Supported Document Types -->
+            <div class="supported-docs">
+                <h4>Supported Document Types</h4>
+                <div class="doc-badges">
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg>ID Cards</span>
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg>Certificates</span>
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Mark Sheets</span>
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>Forms</span>
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/><line x1="14" y1="10" x2="14" y2="14"/><line x1="18" y1="10" x2="18" y2="14"/></svg>Bank Statements</span>
+                    <span class="doc-badge"><svg class="icon" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>Invoices</span>
+                </div>
+            </div>
+
+            <!-- Uploaded Documents List -->
+            <div class="uploaded-documents">
+                <h3>Uploaded Documents</h3>
+                
+                <div class="document-item">
+                    <div class="doc-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-name">Aadhar Card (Scanned)</div>
+                        <div class="doc-meta">
+                            <span>Extracted: 15 fields</span>
+                            <span>•</span>
+                            <span>2.1 MB</span>
+                        </div>
+                        <div class="extraction-preview">
+                            <span class="extracted-tag">Name: Rajesh Kumar Sharma</span>
+                            <span class="extracted-tag">DOB: 15/03/1990</span>
+                            <span class="extracted-tag">Aadhar: 1234 5678 9012</span>
+                        </div>
+                    </div>
+                    <div class="doc-actions">
+                        <button class="action-btn-small icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+                        <button class="action-btn-small icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="document-item">
+                    <div class="doc-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-name">10th Mark Sheet</div>
+                        <div class="doc-meta">
+                            <span>Extracted: 8 fields</span>
+                            <span>•</span>
+                            <span>1.5 MB</span>
+                        </div>
+                        <div class="extraction-preview">
+                            <span class="extracted-tag">Board: CBSE</span>
+                            <span class="extracted-tag">Percentage: 92.5%</span>
+                        </div>
+                    </div>
+                    <div class="doc-actions">
+                        <button class="action-btn-small icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+                        <button class="action-btn-small icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="document-item">
+                    <div class="doc-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-name">Income Certificate</div>
+                        <div class="doc-meta">
+                            <span>Processing...</span>
+                            <span>•</span>
+                            <span>1.2 MB</span>
+                        </div>
+                        <div class="processing-indicator">
+                            <div class="spinner"></div>
+                            <span>AI is analyzing this document</span>
+                        </div>
+                    </div>
+                    <div class="doc-actions">
+                        <button class="action-btn-small icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Extraction Preview -->
+            <div class="ai-preview-card">
+                <div class="preview-header">
+                    <span class="ai-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 0-2 2v2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2h-2zm-1 6h6v6h-6V8zm-3 8h12v2H8v-2z"/></svg></span>
+                    <span><strong>AI Extraction Preview</strong></span>
+                </div>
+                <div class="preview-content">
+                    <div class="preview-item">
+                        <span class="preview-label">Personal Info:</span>
+                        <span class="preview-value">23 fields extracted</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-label">Academic Info:</span>
+                        <span class="preview-value">8 fields extracted</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-label">Financial Info:</span>
+                        <span class="preview-value">Processing...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceed Button -->
+            <button class="cta-button primary full-width" onclick="navigateTo('conversational-form')">
+                Proceed to Form Filling →
+            </button>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="templates.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                    <span class="nav-label">Templates</span>
+                </a>
+                <a href="history.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg></span>
+                    <span class="nav-label">History</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                    <span class="nav-label">Settings</span>
+                </a>
+                <button class="fab icon-container" onclick="window.location.href='form-selection.html'">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

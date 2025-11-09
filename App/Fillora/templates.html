@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Fillora.in - Browse form templates">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fillora">
+    <title>Fillora.in - Templates</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="theme-light">
+    <div class="screen active" id="templates">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <button class="back-button icon-container" onclick="navigateTo('dashboard')"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+                <h1>Form Templates</h1>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search templates...">
+                <button class="search-button icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-chip active">All</button>
+                <button class="filter-chip">Education</button>
+                <button class="filter-chip">Government</button>
+                <button class="filter-chip">Employment</button>
+                <button class="filter-chip">Healthcare</button>
+                <button class="filter-chip">Financial</button>
+            </div>
+
+            <!-- Featured Template -->
+            <div class="featured-template">
+                <div class="featured-badge"><svg class="icon" style="width: 14px; height: 14px; display: inline; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Featured</div>
+                <div class="featured-content">
+                    <div class="featured-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                    <div class="featured-info">
+                        <h3>National Scholarship Portal</h3>
+                        <p>Most popular • 5.2K uses this month</p>
+                        <div class="featured-rating">
+                            <span><svg class="icon" style="width: 14px; height: 14px; display: inline;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="icon" style="width: 14px; height: 14px; display: inline;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="icon" style="width: 14px; height: 14px; display: inline;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="icon" style="width: 14px; height: 14px; display: inline;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="icon" style="width: 14px; height: 14px; display: inline;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                            <span>4.9 (1.2K reviews)</span>
+                        </div>
+                    </div>
+                    <button class="featured-use-btn">Use Template</button>
+                </div>
+            </div>
+
+            <!-- Template Library -->
+            <div class="template-library">
+                <h3>All Templates</h3>
+                
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg></div>
+                        <div class="template-info">
+                            <h4>Passport Application</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.8</span>
+                                <span>•</span>
+                                <span>856 uses</span>
+                                <span>•</span>
+                                <span>Government</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">Complete passport renewal and new application forms with AI assistance</p>
+                    <div class="template-features">
+                        <span class="feature-tag">Auto-fill</span>
+                        <span class="feature-tag">Multi-language</span>
+                        <span class="feature-tag">Document Upload</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                        <div class="template-info">
+                            <h4>Job Application Form</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.7</span>
+                                <span>•</span>
+                                <span>2.1K uses</span>
+                                <span>•</span>
+                                <span>Employment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">Streamline your job applications with intelligent form filling</p>
+                    <div class="template-features">
+                        <span class="feature-tag">Resume Integration</span>
+                        <span class="feature-tag">Cover Letter</span>
+                        <span class="feature-tag">Auto-fill</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="13" y1="9" x2="13" y2="15"/></svg></div>
+                        <div class="template-info">
+                            <h4>Health Insurance Claim</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.6</span>
+                                <span>•</span>
+                                <span>634 uses</span>
+                                <span>•</span>
+                                <span>Healthcare</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">File health insurance claims quickly and accurately</p>
+                    <div class="template-features">
+                        <span class="feature-tag">Medical Records</span>
+                        <span class="feature-tag">Invoice Upload</span>
+                        <span class="feature-tag">Auto-fill</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                        <div class="template-info">
+                            <h4>University Admission</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</span>
+                                <span>•</span>
+                                <span>1.8K uses</span>
+                                <span>•</span>
+                                <span>Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">Complete university admission forms with academic document integration</p>
+                    <div class="template-features">
+                        <span class="feature-tag">Mark Sheets</span>
+                        <span class="feature-tag">Certificates</span>
+                        <span class="feature-tag">Auto-fill</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="21" x2="21" y2="21"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M5 6l7-4 7 4"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v7"/><path d="M12 14v7"/><path d="M16 14v7"/></svg></div>
+                        <div class="template-info">
+                            <h4>Bank Account Opening</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.5</span>
+                                <span>•</span>
+                                <span>432 uses</span>
+                                <span>•</span>
+                                <span>Financial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">Open bank accounts with automated KYC document processing</p>
+                    <div class="template-features">
+                        <span class="feature-tag">KYC Documents</span>
+                        <span class="feature-tag">ID Verification</span>
+                        <span class="feature-tag">Auto-fill</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                        <div class="template-info">
+                            <h4>Property Registration</h4>
+                            <div class="template-meta">
+                                <span><svg class="icon" style="width: 12px; height: 12px; display: inline; margin-right: 2px;" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.4</span>
+                                <span>•</span>
+                                <span>298 uses</span>
+                                <span>•</span>
+                                <span>Government</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="template-description">Complete property registration forms with document verification</p>
+                    <div class="template-features">
+                        <span class="feature-tag">Legal Documents</span>
+                        <span class="feature-tag">Verification</span>
+                        <span class="feature-tag">Auto-fill</span>
+                    </div>
+                    <button class="template-use-btn">Use Template</button>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <button class="load-more-btn">Load More Templates</button>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="templates.html" class="nav-item active">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                    <span class="nav-label">Templates</span>
+                </a>
+                <a href="history.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h12a2 2 0 0 0 2-2V9.414a1 1 0 0 0-.293-.707l-5.414-5.414A1 1 0 0 0 15.586 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"/><path d="M8 21V5a2 2 0 0 1 2-2h5.5"/></svg></span>
+                    <span class="nav-label">History</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon icon-container"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                    <span class="nav-label">Settings</span>
+                </a>
+                <button class="fab icon-container" onclick="window.location.href='form-selection.html'">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
