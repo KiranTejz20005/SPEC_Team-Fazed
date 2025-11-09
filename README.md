@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Fillora Logo](Logo.png)
+<img src="Logo.png" alt="Fillora Logo" width="200" height="200">
 
 **Forms, Filled in Seconds**
 
